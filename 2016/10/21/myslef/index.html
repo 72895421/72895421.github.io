@@ -4,14 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Archives: 2016/10 | Wanghr Blog</title>
+  <title>安装mysql 5.7根目录下缺少data文件夹 | Wanghr Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Wanghr Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2016/10/index.html">
+  <meta name="description" content="安装mysql 5.7+版本时，若发现因根目录下，缺少data文件夹的情况，请不要去拷贝其他版本的data文件夹！因为此操作会出现很多潜在问题：比如我遇到的执行show variables like “%charact%”; 语句时，报错表不存在！
+打开cmd命令窗口，并且进入到mysql安装目录的bin目录下。然后输入命令：mysqld –initialize-insecure –user=my">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安装mysql 5.7根目录下缺少data文件夹">
+<meta property="og:url" content="http://yoursite.com/2016/10/21/myslef/index.html">
 <meta property="og:site_name" content="Wanghr Blog">
+<meta property="og:description" content="安装mysql 5.7+版本时，若发现因根目录下，缺少data文件夹的情况，请不要去拷贝其他版本的data文件夹！因为此操作会出现很多潜在问题：比如我遇到的执行show variables like “%charact%”; 语句时，报错表不存在！
+打开cmd命令窗口，并且进入到mysql安装目录的bin目录下。然后输入命令：mysqld –initialize-insecure –user=my">
+<meta property="og:updated_time" content="2016-10-20T16:26:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wanghr Blog">
+<meta name="twitter:title" content="安装mysql 5.7根目录下缺少data文件夹">
+<meta name="twitter:description" content="安装mysql 5.7+版本时，若发现因根目录下，缺少data文件夹的情况，请不要去拷贝其他版本的data文件夹！因为此操作会出现很多潜在问题：比如我遇到的执行show variables like “%charact%”; 语句时，报错表不存在！
+打开cmd命令窗口，并且进入到mysql安装目录的bin目录下。然后输入命令：mysqld –initialize-insecure –user=my">
   
     <link rel="alternative" href="/atom.xml" title="Wanghr Blog" type="application/atom+xml">
   
@@ -135,76 +142,80 @@
 </nav>
 
       <div class="body-wrap">
+        <article id="post-myslef" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
   
+    <h1 class="article-title" itemprop="name">
+      安装mysql 5.7根目录下缺少data文件夹
+    </h1>
   
+
+      </header>
     
-    
+    <div class="article-entry" itemprop="articleBody">
       
+        <p>安装mysql 5.7+版本时，若发现因根目录下，缺少data文件夹的情况，<br><strong><em>请不要去拷贝其他版本的data文件夹！</em></strong><br>因为此操作会出现很多潜在问题：比如我遇到的执行show variables like “%charact%”; 语句时，报错表不存在！</p>
+<p>打开cmd命令窗口，并且进入到mysql安装目录的bin目录下。然后输入命令：<br>mysqld –initialize-insecure –user=mysql<br>然后回车；去目录下查看，已经自动创建好data文件夹。<br>问题解决！</p>
+
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/10/21/myslef/" class="archive-article-date">
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/10/21/myslef/" class="archive-article-date">
   	<time datetime="2016-10-20T16:26:12.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-21</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/10/21/myslef/">安装mysql 5.7根目录下缺少data文件夹</a>
-    </h1>
-  
+      
+      
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/10/20/hello-world/" class="archive-article-date">
-  	<time datetime="2016-10-20T07:14:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/10/20/hello-world/">Hello World</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/10/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
 
 
       </div>
@@ -227,8 +238,8 @@
 		mathjax: false,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
