@@ -4,21 +4,39 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>安装mysql 5.7根目录下缺少data文件夹 | Wanghr Blog</title>
+  <title>jquery ajax 提交整个 form（ 表单） | Wanghr Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装mysql 5.7+版本时，若发现因根目录下，缺少data文件夹的情况，请不要去拷贝其他版本的data文件夹！因为此操作会出现很多潜在问题：比如我遇到的执行show variables like “%charact%”; 语句时，报错表不存在！
-打开cmd命令窗口，并且进入到mysql安装目录的bin目录下。然后输入命令：mysqld –initialize-insecure –user=my">
+  <meta name="description" content="$.ajax({
+    cache: true,
+    type: &amp;quot;POST&amp;quot;,
+    url:ajaxCallUrl,
+    data:$(&amp;apos;#yourformid&amp;apos;).serialize(),// 你的formid
+    async: false,
+    error: function(request) {
+        alert(&amp;q">
 <meta property="og:type" content="article">
-<meta property="og:title" content="安装mysql 5.7根目录下缺少data文件夹">
-<meta property="og:url" content="http://yoursite.com/2016/10/21/myslef/index.html">
+<meta property="og:title" content="jquery ajax 提交整个 form（ 表单）">
+<meta property="og:url" content="http://yoursite.com/2016/10/21/ajax-submit-form/index.html">
 <meta property="og:site_name" content="Wanghr Blog">
-<meta property="og:description" content="安装mysql 5.7+版本时，若发现因根目录下，缺少data文件夹的情况，请不要去拷贝其他版本的data文件夹！因为此操作会出现很多潜在问题：比如我遇到的执行show variables like “%charact%”; 语句时，报错表不存在！
-打开cmd命令窗口，并且进入到mysql安装目录的bin目录下。然后输入命令：mysqld –initialize-insecure –user=my">
-<meta property="og:updated_time" content="2016-10-20T16:26:12.000Z">
+<meta property="og:description" content="$.ajax({
+    cache: true,
+    type: &amp;quot;POST&amp;quot;,
+    url:ajaxCallUrl,
+    data:$(&amp;apos;#yourformid&amp;apos;).serialize(),// 你的formid
+    async: false,
+    error: function(request) {
+        alert(&amp;q">
+<meta property="og:updated_time" content="2016-10-20T16:29:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="安装mysql 5.7根目录下缺少data文件夹">
-<meta name="twitter:description" content="安装mysql 5.7+版本时，若发现因根目录下，缺少data文件夹的情况，请不要去拷贝其他版本的data文件夹！因为此操作会出现很多潜在问题：比如我遇到的执行show variables like “%charact%”; 语句时，报错表不存在！
-打开cmd命令窗口，并且进入到mysql安装目录的bin目录下。然后输入命令：mysqld –initialize-insecure –user=my">
+<meta name="twitter:title" content="jquery ajax 提交整个 form（ 表单）">
+<meta name="twitter:description" content="$.ajax({
+    cache: true,
+    type: &amp;quot;POST&amp;quot;,
+    url:ajaxCallUrl,
+    data:$(&amp;apos;#yourformid&amp;apos;).serialize(),// 你的formid
+    async: false,
+    error: function(request) {
+        alert(&amp;q">
   
     <link rel="alternative" href="/atom.xml" title="Wanghr Blog" type="application/atom+xml">
   
@@ -142,7 +160,7 @@
 </nav>
 
       <div class="body-wrap">
-        <article id="post-myslef" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-ajax-submit-form" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -152,7 +170,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      安装mysql 5.7根目录下缺少data文件夹
+      jquery ajax 提交整个 form（ 表单）
     </h1>
   
 
@@ -160,15 +178,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>安装mysql 5.7+版本时，若发现因根目录下，缺少data文件夹的情况，<br><strong><em>请不要去拷贝其他版本的data文件夹！</em></strong><br>因为此操作会出现很多潜在问题：比如我遇到的执行show variables like “%charact%”; 语句时，报错表不存在！</p>
-<p>打开cmd命令窗口，并且进入到mysql安装目录的bin目录下。然后输入命令：<br>mysqld –initialize-insecure –user=mysql<br>然后回车；去目录下查看，已经自动创建好data文件夹。<br>问题解决！</p>
-
+        <pre><code>$.ajax({
+    cache: true,
+    type: &quot;POST&quot;,
+    url:ajaxCallUrl,
+    data:$(&apos;#yourformid&apos;).serialize(),// 你的formid
+    async: false,
+    error: function(request) {
+        alert(&quot;Connection error&quot;);
+    },
+    success: function(data) {
+        $(&quot;#commonLayout_appcreshi&quot;).parent().html(data);
+    }
+});
+</code></pre>
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/10/21/myslef/" class="archive-article-date">
-  	<time datetime="2016-10-20T16:26:12.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-21</time>
+      <a href="/2016/10/21/ajax-submit-form/" class="archive-article-date">
+  	<time datetime="2016-10-20T16:29:34.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-21</time>
 </a>
       
       
@@ -181,18 +210,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/10/21/ajax-submit-form/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          jquery ajax 提交整个 form（ 表单）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/10/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2016/10/21/myslef/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">安装mysql 5.7根目录下缺少data文件夹</div>
       <i class="icon-circle-right"></i>
     </a>
   
