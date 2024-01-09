@@ -16,6 +16,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="referrer" content="origin-when-cross-origin">
   <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <style>
     * {
       padding: 0;
@@ -56,10 +57,14 @@
 
   <script>
     function goLink() {
-      window.location.href = "weixin://dl/business/?t=d9sukPI9itv"
+      var jw_url = "weixin://dl/business/?t=d9sukPI9itv";
+      $('.app').append(
+        '<iframe src="' + jw_url + '"></iframe>'
+      );
+      // window.location.href = jw_url
     }
     setTimeout(() => {
-      alert(1)
+      // alert(1)
       goLink()
     }, 800);
   </script>
