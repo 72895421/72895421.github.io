@@ -33,21 +33,23 @@
 
     .box {
       text-align: center;
+      margin-top: 35vh;
       width: 100%;
     }
 
     .app {
-      margin-top: 35vh;
       background-color: rgb(63, 199, 72);
       width: 25vw;
       color: antiquewhite;
       height: 5vh;
       padding: 15px;
+      text-decoration: none;
     }
 
     iframe {
       width: 0px;
       height: 0px;
+      display: none;
     }
   </style>
 </head>
@@ -55,15 +57,16 @@
 <body>
   <!--app根节点-->
   <div class="box">
-    <button class="app" onclick="goLink()">
-      点击 跳转
-    </button>
+
   </div>
 
   <script>
     function goLink() {
       var jw_url = "weixin://dl/business/?t=d9sukPI9itv";
-      $('.app').append(
+      $('.box').append(
+        '<a href="' + jw_url + '" class="app">' +
+        '点击 跳转' +
+        '</a>' +
         '<iframe src="' + jw_url + '"></iframe>'
       );
       // window.location.href = jw_url
